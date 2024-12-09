@@ -1,0 +1,16 @@
+{
+  "name": "barejs",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "node minify.js"
+  },
+  "author": "IsmaCortGtz",
+  "license": "GPL-3.0",
+  "description": "",
+  "dependencies": {
+    "express": "4.21.2",
+    "uglify-js": "^3.19.3"
+  }
+}
