@@ -1,0 +1,23 @@
+<section>
+    <h1>Titulo</h1>
+    <p>Este es un HTMLComponent</p>
+    
+    <slot></slot>
+    
+    <script>
+        console.log("Script anidado");
+    </script>
+</section>
+
+<style>
+    section {
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+
+<script>
+    BareJS.Components.current.shadowRoot.querySelector("h1").innerText = BareJS.Components.current.props.title;
+</script>

@@ -5,9 +5,14 @@ console.log("Build started...");
 
 const config = {
     files: {
-        "test1.js": fs.readFileSync("src/test1.js", "utf8"),
-        "test2.js": fs.readFileSync("src/test2.js", "utf8")
+        // Core
+        "index.js": fs.readFileSync("src/index.js", "utf8"),
+
+        // Components
+        "components/index.js": fs.readFileSync("src/components/index.js", "utf8"),
+        "components/web-component.js": fs.readFileSync("src/components/web-component.js", "utf8")
     },
+    
     output: "BareJS.min.js"
 }
 

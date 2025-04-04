@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo</title>
+
+    <script src="bare.config.js"></script>
+    <script src="BareJS.min.js"></script>
 </head>
 <body>
     BareJS
+
+    <barejs-component bjs-component="wc:CustomImage" barejs-name="Pedro">
+        Jose
+    </barejs-component>
+
+    <barejs-component bjs-component="hc:CustomTitle" barejs-title="Titulo desde props">
+        <barejs-component bjs-component="hc:CustomP" barejs-p="Contenido del parrafo desde un HTMLComponent"></barejs-component>
+    </barejs-component>
+    
+    <barejs-component bjs-component="hc:CustomTitle" barejs-title="El mismo componente v2">
+        Usando slot en HTMLComponent
+    </barejs-component>
+
 </body>
 </html>

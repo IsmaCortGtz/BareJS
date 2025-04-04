@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "node minify.js"
+    "build": "node minify.js && cp BareJS.min.js example/."
   },
   "author": "IsmaCortGtz",
   "license": "GPL-3.0",
